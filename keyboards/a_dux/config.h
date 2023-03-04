@@ -22,7 +22,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* Locking resynchronize hack */
 #define LOCKING_RESYNC_ENABLE
 
-#define EE_HANDS
+#define MASTER_LEFT
+#define SPLIT_USB_DETECT
 
 /* SPI & PMW3360 settings. 
 #define SPI_DRIVER SPID0
