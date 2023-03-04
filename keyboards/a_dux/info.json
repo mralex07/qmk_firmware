@@ -8,8 +8,8 @@
         "pid": "0x3939",
         "device_version": "0.0.1"
     },
-    "processor": "atmega32u4",
-    "bootloader": "atmel-dfu",
+    "processor": "RP2040",
+    "bootloader": "rp2040",
     "matrix_pins": {
         "direct": [
             ["C6", "D2", "F7", "B2", "F4"],
