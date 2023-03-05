@@ -46,3 +46,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // #define I2C1_SDA_PAL_MODE 4
 #define I2C0_SCL_PIN GP13
 // #define I2C1_SCL_PAL_MODE 4
+
+/* VBUS detection. */
+#define USB_VBUS_PIN GP19
