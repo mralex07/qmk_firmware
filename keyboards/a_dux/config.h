@@ -42,10 +42,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define CIRQUE_PINNACLE_ATTENUATION EXTREG__TRACK_ADCCONFIG__ADC_ATTENUATE_1X
 
 #define I2C_DRIVER I2CD0
-#define I2C1_SDA_PIN GP12
+/* #define I2C1_SDA_PIN GP12
 // #define I2C1_SDA_PAL_MODE 4
 #define I2C1_SCL_PIN GP13
-// #define I2C1_SCL_PAL_MODE 4
+// #define I2C1_SCL_PAL_MODE 4 */
 
 /* VBUS detection. */
 #define USB_VBUS_PIN GP19
