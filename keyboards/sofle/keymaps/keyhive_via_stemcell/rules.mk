@@ -11,3 +11,5 @@ RGBLIGHT_ENABLE = yes
 
 SERIAL_DRIVER = usart
 DEBOUNCE_TYPE = asym_eager_defer_pk
+
+BOOTMAGIC_ENABLE = yes      # Enable Bootmagic Lite
