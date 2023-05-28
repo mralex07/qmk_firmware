@@ -189,3 +189,8 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     // this uses less memory than returning in each case.
     return keycode < SAFE_RANGE;
 };
+
+void keyboard_post_init_user(void) {
+  wait_ms(2000);
+  oled_init(OLED_ROTATION_0);
+}
