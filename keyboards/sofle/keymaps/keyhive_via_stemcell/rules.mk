@@ -8,3 +8,6 @@ CONVERT_TO = stemcell
 
 VIA_ENABLE = yes
 RGBLIGHT_ENABLE = yes
+
+SERIAL_DRIVER = usart
+DEBOUNCE_TYPE = asym_eager_defer_pk
