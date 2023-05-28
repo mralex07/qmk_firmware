@@ -46,3 +46,9 @@ for more options.
 #define NO_ACTION_MACRO    // 0
 #define NO_ACTION_FUNCTION // 0
 #define DISABLE_LEADER     // 0
+
+#define I2C_DRIVER I2CD1
+#define I2C1_SDA_PIN D1
+// #define I2C1_SDA_PAL_MODE 4
+#define I2C1_SCL_PIN D0
+// #define I2C1_SCL_PAL_MODE 4
