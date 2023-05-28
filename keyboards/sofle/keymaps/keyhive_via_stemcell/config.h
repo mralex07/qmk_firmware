@@ -51,4 +51,8 @@ for more options.
 #define I2C1_SDA_PIN D1
 // #define I2C1_SDA_PAL_MODE 4
 #define I2C1_SCL_PIN D0
-// #define I2C1_SCL_PAL_MODE 4
+// #define I2C1_SCL_PAL_MODE 4d
+
+/* Handedness. */
+#define MASTER_LEFT
+#define SPLIT_USB_DETECT
