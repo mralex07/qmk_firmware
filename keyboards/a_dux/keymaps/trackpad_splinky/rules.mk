@@ -2,7 +2,8 @@
 #   change yes to no to disable
 #
 # RP2040-specific options
-
+BOOTLOADER = RP2040
+MCU = RP2040
 ALLOW_WARNINGS = yes
 PICO_INTRINSICS_ENABLED = no # ATM Unsupported by ChibiOS.
 
@@ -24,3 +25,6 @@ POINTING_DEVICE_ENABLE = yes
 POINTING_DEVICE_DRIVER = cirque_pinnacle_i2c
 MOUSE_SHARED_EP = no # Unify multiple HID interfaces into a single Endpoint
 KEYBOARD_SHARED_EP = yes
+
+TAP_DANCE_ENABLE = yes
+COMBO_ENABLE = yes
