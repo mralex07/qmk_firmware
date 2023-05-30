@@ -2,7 +2,7 @@
 #   change yes to no to disable
 #
 # RP2040-specific options
-BOOTLOADER = RP2040
+BOOTLOADER = rp2040
 MCU = RP2040
 ALLOW_WARNINGS = yes
 PICO_INTRINSICS_ENABLED = no # ATM Unsupported by ChibiOS.
