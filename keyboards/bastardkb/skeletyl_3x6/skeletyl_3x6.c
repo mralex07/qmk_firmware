@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright 2021 Quentin LEBASTARD <qlebastard@gmail.com>
  *
  * This program is free software: you can redistribute it and/or modify
@@ -15,24 +15,22 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "skeletyl_3x6.h"
+#include "quantum.h"
 
 // clang-format off
 #ifdef RGB_MATRIX_ENABLE
 led_config_t g_led_config = { {
-    /* Key Matrix to LED index. */
-    // Left split.
-    {      0,        5,      6,      11,      12,     15 }, // Top row
-    {      1,        4,      7,      10,      13,     16 }, // Middle row
-    {      2,        3,      8,      9,       14,     17 }, // Bottom row
-    { NO_LED,       18, NO_LED,      19,      20, NO_LED }, // Thumb cluster
-    // Right split.
-    {     21,       26,     27,      32,     33,     36 }, // Top row
-    {     22,       25,     28,      31,     34,     37 }, // Middle row
-    {     23,       24,     29,      30,     35,     38 }, // Bottom row
-    { NO_LED,       39, NO_LED,      40,     41, NO_LED }, // Thumb cluster
+    // left
+    {  0,  5,  6, 11, 12, 15 },
+    {  1,  4,  7, 10, 13, 16 },
+    {  2,  3,  8,  9, 14, 17 },
+    { NO_LED, 20, NO_LED, 18, 19, NO_LED },
+    // right
+    { 21, 26, 27, 32, 33, 36 },
+    { 22, 25, 28, 31, 34, 37 },
+    { 23, 24, 29, 30, 35, 38 },
+    { NO_LED, 41, NO_LED, 39, 40, NO_LED }
 }, {
-    /* LED index to physical position. */
     // left
     {   0,   0 }, {   0,  21 }, {   0,  42 }, // col 1
     {  20,  42 }, {  20,  21 }, {  20,   0 }, // col 2
@@ -49,7 +47,6 @@ led_config_t g_led_config = { {
     { 142,   0 }, { 142,  21 }, { 142,  42 },
     { 122,   0 }, { 122,  21 }, { 122,  42 },
     { 163,  64 }, { 142,  64 }, { 122,  64 }  // right thumb cluster
-
 }, {
     /* LED index to flag. */
     // Left split.
@@ -59,7 +56,7 @@ led_config_t g_led_config = { {
     /* index=9  */ LED_FLAG_KEYLIGHT, LED_FLAG_KEYLIGHT, LED_FLAG_KEYLIGHT,
     /* index=12 */ LED_FLAG_KEYLIGHT, LED_FLAG_KEYLIGHT, LED_FLAG_KEYLIGHT,
                    LED_FLAG_KEYLIGHT, LED_FLAG_KEYLIGHT, LED_FLAG_KEYLIGHT,
-    /* index=15 */ LED_FLAG_MODIFIER, LED_FLAG_MODIFIER, LED_FLAG_MODIFIER, // Thumb cluster
+    /* index=15 */ LED_FLAG_KEYLIGHT, LED_FLAG_KEYLIGHT, LED_FLAG_KEYLIGHT, // Thumb cluster
     // Right split.
     /* index=18 */ LED_FLAG_KEYLIGHT, LED_FLAG_KEYLIGHT, LED_FLAG_KEYLIGHT, // col 10
     /* index=21 */ LED_FLAG_KEYLIGHT, LED_FLAG_KEYLIGHT, LED_FLAG_KEYLIGHT, // col 9
@@ -67,7 +64,7 @@ led_config_t g_led_config = { {
     /* index=27 */ LED_FLAG_KEYLIGHT, LED_FLAG_KEYLIGHT, LED_FLAG_KEYLIGHT,
     /* index=30 */ LED_FLAG_KEYLIGHT, LED_FLAG_KEYLIGHT, LED_FLAG_KEYLIGHT,
                    LED_FLAG_KEYLIGHT, LED_FLAG_KEYLIGHT, LED_FLAG_KEYLIGHT,
-    /* index=33 */ LED_FLAG_MODIFIER, LED_FLAG_MODIFIER, LED_FLAG_MODIFIER, // Thumb cluster
+    /* index=33 */ LED_FLAG_KEYLIGHT, LED_FLAG_KEYLIGHT, LED_FLAG_KEYLIGHT, // Thumb cluster
 } };
 #endif
 // clang-format on
