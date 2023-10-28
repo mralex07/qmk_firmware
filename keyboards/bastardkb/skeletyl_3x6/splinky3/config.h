@@ -8,9 +8,9 @@
 // #define SPLIT_HAND_PIN_LOW_IS_LEFT  // High -> right, Low -> left.
 
 /* RGB settings. */
-#define WS2812_DI_PIN GP0
+//#define WS2812_DI_PIN GP0
 #define RGB_DI_PIN GP0
-// #define WS2812_PIO_USE_PIO1
+//#define WS2812_PIO_USE_PIO1
 //#define WS2812_EXTERNAL_PULLUP
 //#define SERIAL_USART_TX_PIN GP0
 /* Reset. */

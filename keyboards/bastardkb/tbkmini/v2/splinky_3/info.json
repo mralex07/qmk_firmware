@@ -7,5 +7,9 @@
         "soft_serial_pin": "GP1"
     },
     "processor": "RP2040",
-    "bootloader": "rp2040"
+    "bootloader": "rp2040",
+    "matrix_pins": {
+        "cols": ["GP27", "GP28", "GP21", "GP6", "GP7", "GP8"],
+        "rows": ["GP29", "GP26", "GP5", "GP4"]
+    }
 }
