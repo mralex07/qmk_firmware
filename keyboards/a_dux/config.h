@@ -23,7 +23,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define LOCKING_RESYNC_ENABLE
 
 #define MASTER_RIGHT
-#define SPLIT_USB_DETECT
+
+/* VBUS detection. */
+#define USB_VBUS_PIN GP19 
 
 /* Reset. */
 #define RP2040_BOOTLOADER_DOUBLE_TAP_RESET
